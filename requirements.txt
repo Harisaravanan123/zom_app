@@ -1,0 +1,6 @@
+streamlit
+psycopg2-binary
+python-dotenv
+google-generativeai
+streamlit-folium
+folium
