@@ -4,3 +4,4 @@ python-dotenv
 google-generativeai
 streamlit-folium
 folium
+scikit-learn
