@@ -1,8 +1,8 @@
-CHEFMATE : RESTAURANT RECOMMENDATION SYSTEM AND COOKING ASSISTANT AI.
+# CHEFMATE : RESTAURANT RECOMMENDATION SYSTEM AND COOKING ASSISTANT AI.
 
 * The main objective of the project is to create a datascience clustering model to give restaurant recommendation based on cuisines and built an ai only for cooking role.
 
-TOOLS
+## TOOLS
 
 * PYTHON
 * PANDAS,NUMPY
@@ -11,7 +11,7 @@ TOOLS
 * AWS(S3 BUKET,RDS,EC2 INSTANCE)
 * STREAMLIT
   
-DATA PREPROCESSING
+## DATA PREPROCESSING
 
 * First push the raw restuarant data wjich was in dictionary format into aws s3 bucket.
 * After that pull the data from s3 bucket to start doing preprocessing of the data .
@@ -20,7 +20,7 @@ DATA PREPROCESSING
 * Orgnaize the columns into their respective datatypes.
 * Store the preprocessed data in the amazon RDS.
   
-MACHINE LEARNING
+## MACHINE LEARNING
 
 * Read the data from amazon rds and used it for machine learning.
 * I did onehotencoding for my cuisine column in my dataframe .
@@ -29,7 +29,7 @@ MACHINE LEARNING
 * I used minikmeans algorithm to train my dataset with n_clusters = 7.
 * Then i pickle the encoder,pca and model file.
   
-STREAMLIT
+## STREAMLIT
 
 * First I read the data from rds with the use of psycopg2 .
 * Then make my streamlit app called RESTAURANT RECOMMENDATION SYSTEM WITH INTEGRATED CHATBOT
@@ -39,7 +39,7 @@ STREAMLIT
 * In the chefbot, I used the google geminiai model to make the chatbot.
 * Especially in the role ,i change it into cooking instructions, So i got everything related to cooking and food only.
   
-DEPLOYMENT
+## DEPLOYMENT
 
 * I created an EC2 INSTANCE WITH OS as ubuntu.
 * After that I hosted my streamlit application in that ubuntu machine.
