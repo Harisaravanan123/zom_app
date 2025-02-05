@@ -44,6 +44,8 @@ if page=="Restaurant Recommendation":
 
 # set the title
     title=st.title("RESTAURANT RECOMMENDATION SYSTEM")
+    st.image("C:/Users/nambi/OneDrive/Desktop/Certficates- Hari/Why-choose-restaurant-app-development-in-2021-for-Food-Business.jpg")
+
     
     st.sidebar.header("Filter Options")
     df1['Cuisines'] = df1['Cuisines'].str.split(',')
@@ -91,6 +93,8 @@ if page=="Restaurant Recommendation":
 if page=="ChefbotGPT":
     
     st.title("cooking instruction chatbot")
+    st.image("C:/Users/nambi/OneDrive/Desktop/Certficates- Hari/chefbot.jpg")
+
     
     st.header("Ask me anything about cooking")
     genai.configure(api_key=os.getenv('api_key'))
