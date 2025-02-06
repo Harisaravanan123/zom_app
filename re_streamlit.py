@@ -93,7 +93,7 @@ if page=="Restaurant Recommendation":
 if page=="ChefbotGPT":
     
     st.title("cooking instruction chatbot")
-    st.image("C:/Users/nambi/OneDrive/Desktop/Certficates- Hari/chefbot.jpg")
+    st.image("chefbot.jpg")
 
     
     st.header("Ask me anything about cooking")
