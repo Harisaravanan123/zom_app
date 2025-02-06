@@ -44,7 +44,7 @@ if page=="Restaurant Recommendation":
 
 # set the title
     title=st.title("RESTAURANT RECOMMENDATION SYSTEM")
-    st.image("C:/Users/nambi/OneDrive/Desktop/Certficates- Hari/Why-choose-restaurant-app-development-in-2021-for-Food-Business.jpg")
+    st.image("Why-choose-restaurant-app-development-in-2021-for-Food-Business.jpg")
 
     
     st.sidebar.header("Filter Options")
