@@ -1,5 +1,5 @@
 streamlit
-psycopg2-binary
+mysql-connector-python
 python-dotenv
 google-generativeai
 streamlit-folium
