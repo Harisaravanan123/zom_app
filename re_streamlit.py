@@ -11,21 +11,22 @@ from dotenv import load_dotenv
 load_dotenv()
 import os
 
-import psycopg2
-from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
-connection=psycopg2.connect(
+import mysql.connector
+
+
+connection = mysql.connector.connect(
     host=os.getenv('host'),
     database=os.getenv('database'),
     port=os.getenv('port'),
-    user= os.getenv('user'),
-    password=os.getenv('password')
-)  
-connection.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
-writer=connection.cursor()
-writer.execute(''' SELECT * from "Res_data" ''')
-tables=writer.fetchall()
-column_names=[desc[0] for desc in writer.description]
-df1=pd.DataFrame(tables,columns=column_names)  
+    user=os.getenv('user'),
+    password=os.getenv('password'),
+    autocommit=True  
+)
+
+writer = connection.cursor(dictionary=True)  
+writer.execute('SELECT * FROM zomato')
+tables = writer.fetchall()
+df1=pd.DataFrame(tables)   
 
 with open('minikmeans.pkl','rb')as model_file:
     model=pickle.load(model_file)
